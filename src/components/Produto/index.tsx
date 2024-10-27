@@ -1,6 +1,8 @@
 import { useDispatch } from 'react-redux'
+
 import { Game } from '../../App'
 import * as S from './styles'
+
 import { adicionar } from '../../store/reducers/carrinho'
 
 type Props = {
@@ -14,6 +16,7 @@ export const paraReal = (valor: number) =>
 
 const Produto = ({ game }: Props) => {
   const dispatch = useDispatch()
+
   return (
     <S.Produto>
       <S.Capa>
